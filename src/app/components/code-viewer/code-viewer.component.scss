@@ -1,0 +1,31 @@
+.vertical-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(33, 37, 41, 0),
+    rgba(33, 37, 41, 0),
+    rgba(33, 37, 41, 1)
+  );
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  &-smooth {
+    @extend .vertical-gradient;
+    background: linear-gradient(
+      to bottom,
+      rgba(33, 37, 41, 0),
+      rgba(33, 37, 41, 0.3)
+    );
+  }
+}
+
+.box-code {
+  max-width: 100%;
+  width: 100%;
+  min-width: 100%;
+  text-wrap: wrap;
+
+  pre {
+    text-wrap: wrap;
+  }
+}

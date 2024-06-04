@@ -1,0 +1,16 @@
+<article>
+  <h2 class="items-titles">Versiones - Número de versión</h2>
+  <app-spinner [loading]="isLoading"></app-spinner>
+  <section *ngIf="!isLoading" class="mb-5">
+    <h3>Obtén el listado de las versiones</h3>
+    <p>
+      Puedes acceder al listado de las versiones utilizando el endpoint
+      <span class="fst-italic">/versions/1.53.0</span>.
+    </p>
+
+    <app-code-viewer
+      url="/api/obelisco/versions/1.53.0"
+      [shortVersion]="true"
+    ></app-code-viewer>
+  </section>
+</article>

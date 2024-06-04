@@ -1,0 +1,24 @@
+<div>
+  <button
+    (click)="toggleShowMore()"
+    class="btn d-flex align-items-center fs-6 justify-content-center ms-auto"
+    style="min-width: 110px"
+    [ngClass]="{ 'btn-primary': !shorthand, 'btn-light': shorthand }"
+  >
+    <ng-container *ngIf="shorthand; else more"
+      >Ver menos <i class="bx bx-minus ps-2"></i
+    ></ng-container>
+    <ng-template #more>Ver más <i class="bx bx-plus ps-2"></i></ng-template>
+  </button>
+</div>
+<div>
+  <ng-container *ngIf="shorthand">
+    <pre>{{ fullData | json }}</pre>
+  </ng-container>
+  <ng-container *ngIf="!shorthand && fullData">
+    <div class="position-relative">
+      <pre>{{ getModifiedData() | json }}</pre>
+      <div class="vertical-gradient"></div>
+    </div>
+  </ng-container>
+</div>

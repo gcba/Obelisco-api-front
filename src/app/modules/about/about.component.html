@@ -1,0 +1,156 @@
+<div class="about-section">
+  <div class="about-title">
+    <div class="container">
+      <h1>Obelis-que?</h1>
+    </div>
+  </div>
+  <div class="container justify-content-center align-items-center mx-auto">
+    <section class="about-description mb-5">
+      <h3>Acerca de Obelisco</h3>
+      <p>
+        Es el sistema de diseño para productos digitales del Gobierno de la
+        Ciudad de Buenos Aires; una guía de recursos y herramientas creada para
+        los ciudadanos/as. Obelisco busca brindar soluciones de diseño tanto a
+        áreas internas como externas de Gobierno, poniendo el foco en la
+        accesibilidad y los estándares de usabilidad para lograr una experiencia
+        ideal para las personas usuarias.
+      </p>
+    </section>
+    <section class="mx-auto mb-5">
+      <o-highlighted
+        title="Sistema y estándares"
+        description="Conocé las características que deben cumplir los desarrollos
+        digitales para el Gobierno de la Ciudad de Buenos Aires impulsados
+        por la Agencia de Sistemas de Información."
+        [image]="{
+          src: 'assets/panel1.svg',
+          alt: 'Sistema y estándares'
+        }"
+      >
+        <o-button
+          #children
+          link="https://gcba.github.io/estandares/"
+          size="lg"
+          text="Explorar sistema"
+        ></o-button>
+      </o-highlighted>
+
+      <o-highlighted
+        title="Storybook"
+        description="Descubrí nuestros componentes accesibles para la creación y
+            desarrollo de productos digitales, enfocados para la utilización de
+            desarrolladores."
+        [image]="{
+          src: 'assets/panel2.svg',
+          alt: 'Storybook'
+        }"
+      >
+        <o-button
+          #children
+          link="https://gcba.github.io/Obelisco"
+          size="lg"
+          text="Conocer componentes"
+        ></o-button>
+      </o-highlighted>
+
+      <o-highlighted
+        title="Figma UI Kit"
+        description="Simplificá tu proyecto con nuestra librería de componentes y guía de
+            estilos, para una implementación ágil y sencilla."
+        [image]="{
+          src: 'assets/panel3.svg',
+          alt: 'Figma UI Kit'
+        }"
+      >
+        <o-button
+          text="Descargar UI Kit"
+          #children
+          link="assets/UI_KIT_-_Obelisco_1 (1).fig"
+          size="lg"
+          download=""
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Enlace de descarga de UI KIT."
+          type="secondary"
+        ></o-button>
+      </o-highlighted>
+    </section>
+
+    <section class="about-description mb-5">
+      <h3 class="fw-bold">Quiénes somos</h3>
+      <p>
+        Somos un equipo de trabajo interdisciplinario, una sinergia entre
+        Diseñadores expertos en experiencia e interfaz para el usuario, y
+        también Desarrolladores Front End.
+      </p>
+      <p>
+        Nuestro enfoque se divide en dos vías de trabajo complementarias:
+        "Descubrimiento" y "Entrega".
+      </p>
+      <p>
+        La vía de "Descubrimiento" se centra en producir, probar y validar ideas
+        de componentes y estilos. Aquí es donde creamos y experimentamos,
+        siempre buscando mejorar y elevar el estándar de experiencia para
+        nuestros usuarios.
+      </p>
+      <p>
+        Por otro lado, la vía de "Entrega" entra en acción para transformar
+        estas ideas y componentes en desarrollos tangibles. Así, aseguramos que
+        cada concepto se convierta en una realidad utilizable en futuros
+        proyectos.
+      </p>
+      <p>
+        Simultáneamente trabajamos en investigación y desarrollo, esto nos
+        permite realizar iteraciones ágiles y brindar un valor continuo y
+        significativo a nuestros usuarios en cada paso del proyecto.
+      </p>
+    </section>
+  </div>
+</div>
+<o-footer>
+  <ng-container *oCustomContent>
+    <h2 class="sr-only">Navegación de pie de página</h2>
+    <div class="container">
+      <section class="footer-legal-section">
+        
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+            <img
+              class="d-lg-none"
+              src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
+              alt="Logo de Ciudad de Buenos Aires"
+              height="48"
+            />
+            <img
+              class="d-none d-lg-inline"
+              src="https://gcba.github.io/Obelisco/footer/ciudad-ba.svg"
+              alt="Logo de Ciudad de Buenos Aires"
+              height="40"
+            />
+            <img
+              class="img-vamos-ba"
+              src="https://gcba.github.io/Obelisco/footer/vamos-ba.svg"
+              alt="Logo de Vamos Buenos Aires"
+            />
+          </div>
+        </div>
+      </section>
+      <p class="mb-1">
+        <small>
+          Diseñado y construido por el equipo de
+          <a
+            href="https://github.com/gcba/ngx-obelisco"
+            rel="noopener"
+            target="_blank"
+            >Ngx-obelisco</a
+          >.
+        </small>
+      </p>
+      <p class="mb-1">
+        <small
+          >Código licenciado bajo las condiciones de la licencia MIT.</small
+        >
+      </p>
+    </div>
+  </ng-container>
+</o-footer>

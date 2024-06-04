@@ -1,0 +1,28 @@
+<article>
+  <h2 class="items-titles">Header - Imágenes</h2>
+  <section class="mb-5">
+    <h3>Obtén todas las imágenes</h3>
+    <p>
+      Puedes acceder a la lista de imágenes utilizando el endpoint
+      <span class="fst-italic">/header/images</span>.
+    </p>
+
+    <app-code-viewer
+      url="/api/obelisco/header/images"
+      [shortVersion]="true"
+    ></app-code-viewer>
+  </section>
+
+  <section class="mb-4">
+    <h3>Obtén una única imagen</h3>
+    <p>
+      Puedes obtener una única imagen agregando el ID como parámetro:
+      <span class="fst-italic">/header/images/1</span>
+    </p>
+
+    <app-code-viewer
+      url="/api/obelisco/header/images/1"
+      [forImage]="true"
+    ></app-code-viewer>
+  </section>
+</article>

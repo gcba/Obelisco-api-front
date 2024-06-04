@@ -1,0 +1,140 @@
+<!-- Para el caso de visualización de datos -->
+<div *ngIf="!forImage && !forPdf" class="code-box bg-dark text-light rounded">
+  <p class="code-url px-4 pt-4">
+    <span class="get">
+      <span class="text-green fw-bold pr-2">GET</span>
+      <span>
+        {{ allUrl }}
+      </span>
+    </span>
+    <i
+      class="bx bx-copy-alt"
+      style="color: #ffffff"
+      ngxClipboard
+      [cbContent]="allUrl"
+    ></i>
+  </p>
+  <hr class="border-white" />
+
+  <div *ngIf="isLoading" class="text-center my-4 pt-4 pb-5">
+    <div class="spinner-border text-secondary spinner-border-lg" role="status">
+      <span class="sr-only">Cargando...</span>
+    </div>
+  </div>
+
+  <ng-container *ngIf="shortVersion">
+    <div
+      [@fadeInOut]="isLoading ? 'void' : 'visible'"
+      class="d-flex flex-column box-code"
+      [hidden]="isLoading"
+    >
+      <pre style="padding: 32px 32px 32px 32px; color: white">{{
+        dataAll | json
+      }}</pre>
+    </div>
+  </ng-container>
+
+  <div
+    *ngIf="!shortVersion"
+    [@fadeInOut]="isLoading ? 'void' : 'visible'"
+    class="d-flex flex-column box-code"
+    [hidden]="isLoading"
+  >
+    <button
+      (click)="toggleVisibility()"
+      class="btn btn-primary btn-icon ml-auto mr-3 more"
+      style="min-width: 110px"
+    >
+      <ng-container *ngIf="shorthandAll; else more"
+        >Ver menos <i class="bx bx-minus"></i
+      ></ng-container>
+      <ng-template #more>Ver más <i class="bx bx-plus"></i></ng-template>
+    </button>
+    <ng-container *ngIf="shorthandAll">
+      <pre class="pre-code" style="padding: 0px 32px 32px 32px; color: white">{{
+        dataAll | json
+      }}</pre>
+    </ng-container>
+    <ng-container *ngIf="!shorthandAll">
+      <div class="position-relative">
+        <pre
+          class="pre-code"
+          style="
+            width: 100%;
+            max-height: 700px;
+            overflow: hidden;
+            padding: 0px 32px 32px 32px;
+            color: white;
+          "
+          >{{ dataAll | json }}</pre
+        >
+        <div class="vertical-gradient rounded"></div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<div *ngIf="forImage" class="code-box bg-dark text-light">
+  <p class="code-url px-4 pt-4">
+    <span>
+      <span class="text-green fw-bold pr-2">GET</span>
+      <span> {{ URL_BASE }}{{ url }} </span>
+    </span>
+    <i
+      class="bx bx-copy-alt"
+      style="color: #ffffff"
+      ngxClipboard
+      [cbContent]="dataAll"
+    ></i>
+  </p>
+  <hr class="border-white" />
+
+  <div *ngIf="isLoading" class="text-center my-4 pt-4 pb-5">
+    <div class="spinner-border text-secondary spinner-border-lg" role="status">
+      <span class="sr-only">Cargando...</span>
+    </div>
+  </div>
+
+  <div class="p-4" [hidden]="isLoading">
+    <div class="mb-0">
+      <pre><p class="mb-0 text-white">&lt;img src="{{ URL_BASE }}{{url}}" alt=""&gt;</p></pre>
+    </div>
+    <hr class="border-white" />
+    <p class="fw-bold">Resultado:</p>
+    <div class="text-center my-4">
+      <img src="{{ URL_BASE + url }}" alt="" />
+    </div>
+  </div>
+</div>
+
+<div *ngIf="forPdf" class="code-box bg-dark text-light">
+  <p class="code-url px-4 pt-4">
+    <span>
+      <span class="text-green fw-bold pr-2">GET</span>
+      <span> {{ URL_BASE }}{{ url }} </span>
+    </span>
+    <i
+      class="bx bx-copy-alt"
+      style="color: #ffffff"
+      ngxClipboard
+      [cbContent]="dataAll"
+    ></i>
+  </p>
+  <hr class="border-white" />
+
+  <div *ngIf="isLoading" class="text-center my-4 pt-4 pb-5">
+    <div class="spinner-border text-secondary spinner-border-lg" role="status">
+      <span class="sr-only">Cargando...</span>
+    </div>
+  </div>
+
+  <div class="px-4 pb-4" [hidden]="isLoading">
+    <div>
+      <pre><p class="mb-0 text-white">&lt;a href="{{ URL_BASE }}/api/obelisco/resolution/download" download&gt;Descargar Resolución&lt;/a&gt;</p></pre>
+    </div>
+    <hr class="border-white" />
+    <p class="fw-bold">Resultado:</p>
+    <a class="link-white d-block mx-auto" href="{{ allUrl }}">Descargar Resolución</a>
+  </div>
+</div>
+
