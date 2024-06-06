@@ -29,3 +29,12 @@
     text-wrap: wrap;
   }
 }
+
+.json-viewer {
+  padding-left: 24px;
+  padding-bottom: 16px;
+
+  @media screen and (max-width: 975px) {
+    padding-left: 8px !important;
+  }
+}

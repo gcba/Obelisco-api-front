@@ -6,6 +6,26 @@
 @import "highlight.js/styles/github.css";
 @import "highlight.js/scss/a11y-dark.scss";
 
+:root {
+  --ngx-json-string: #a3e7fc; /* Color para valores de tipo string */
+  --ngx-json-number: #f78c6c; /* Color para valores de tipo número */
+  --ngx-json-boolean: #ffcb6b; /* Color para valores de tipo boolean */
+  --ngx-json-date: #c3e88d; /* Color para valores de tipo fecha */
+  --ngx-json-array: #89ddff; /* Color para valores de tipo array */
+  --ngx-json-object: #82aaff; /* Color para valores de tipo objeto */
+  --ngx-json-function: #c792ea; /* Color para valores de tipo función */
+  --ngx-json-null: #ff5370; /* Color para valores de tipo null */
+  --ngx-json-null-bg: #2d2d2d; /* Color de fondo para valores de tipo null */
+  --ngx-json-undefined: #ff5370; /* Color para valores de tipo undefined */
+  --ngx-json-toggler: #ffffff; /* Color del toggler */
+  --ngx-json-key: #c3e88d; /* Color de las claves */
+  --ngx-json-separator: #89ddff; /* Color de los separadores */
+  --ngx-json-value: #ffffff; /* Color de los valores */
+  --ngx-json-undefined-key: #ff5370; /* Color de las claves para valores undefined */
+  // --ngx-json-font-family: "Fira Code", monospace; /* Fuente */
+  // --ngx-json-font-size: 14px; /* Tamaño de la fuente */
+}
+
 html,
 body {
   height: 100%;
@@ -48,11 +68,19 @@ body {
   }
 }
 .pre-code {
-  padding: 8px !important;
+  padding: 20px !important;
+
+  @media screen and (max-width: 975px) {
+    padding: 8px !important;
+  }
 }
 
 .more {
-  margin-right: 8px !important;
+  margin-right: 20px !important;
+
+  @media screen and (max-width: 975px) {
+    margin-right: 8px !important;
+  }
 }
 
 .text-green {
