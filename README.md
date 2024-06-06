@@ -8,13 +8,11 @@
 
 ## Descripción
 
-Explora el Backend API del Gobierno de la Ciudad de Buenos Aires con [Obelisco-back](https://github.com/gcba/obelisco-back). Accede fácilmente a endpoints que proporcionan información actualizada sobre diversos aspectos de la vida en la ciudad.
+Es la plataforma de documentación para [Obelisco-back](https://obelisco-back.web.app/) API de Obelisco destinado a simplificar el trabajo de desarrolladores en proyectos y activos digitales del Gobierno de la Ciudad de Buenos Aires.
 
-Simplifica tu desarrollo y crea aplicaciones innovadoras con datos confiables y accesibles.
+Accedé fácilmente a los endpoints que proporcionan información actualizada sobre diversos aspectos de la vida en la ciudad.
 
-## Comenzando
-
-Revisa la [documentación](https://obelisco-back.web.app/) para poder continuar.
+Utiliza la [documentación](https://obelisco-back.web.app/) y creá aplicaciones innovadoras con datos confiables y accesibles.
 
 ## Instalación
 

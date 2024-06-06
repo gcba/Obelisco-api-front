@@ -8,6 +8,7 @@ import {
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { ClipboardModule } from 'ngx-clipboard';
+import { NgxJsonViewerModule } from 'ngx-json-viewer';
 import { URL_BASE } from 'src/app/constants/components.constants';
 import { DataService } from 'src/app/services/request-data/data.service';
 import { ImageService } from 'src/app/services/request-images/image.service';
@@ -16,7 +17,7 @@ import { PdfService } from 'src/app/services/request-pdf/pdf.service';
 @Component({
   selector: 'app-code-viewer',
   standalone: true,
-  imports: [CommonModule, ClipboardModule],
+  imports: [CommonModule, ClipboardModule, NgxJsonViewerModule],
   templateUrl: './code-viewer.component.html',
   styleUrls: ['./code-viewer.component.scss'],
   animations: [

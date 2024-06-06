@@ -1,12 +1,12 @@
 <div class="container-fluid">
-  <div class="row" style="max-height: calc(100vh - 80px);">
-    <div class="col-md-12 col-lg-3 col-xl-2 bg-light p-0 ">
+  <div class="row" style="max-height: calc(100vh - 80px)">
+    <div class="col-md-12 col-lg-3 col-xl-2 bg-light p-0">
       <div class="back-nav pt-3 pb-0 pb-md-3 px-3">
         <o-button
           type="secondary"
           [isOutline]="true"
           icon="bx bx-list-ul"
-          customClasses="btn-categories mb-2"
+          customClasses="btn-categories"
           text="Secciones"
           dataToggle="collapse"
           dataTarget="collapseSubmenu"
@@ -27,7 +27,9 @@
         </div>
       </div>
     </div>
-    <div class="back-content col-md-12 col-lg-9 col-xl-10 px-0 pr-3 py-3 bg-light">
+    <div
+      class="back-content col-md-12 col-lg-9 col-xl-10 px-0 pr-3 py-3 bg-light"
+    >
       <div class="bg-white pt-4 pb-1 px-4 rounded-lg box-container">
         <router-outlet></router-outlet>
       </div>
