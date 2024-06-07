@@ -3,16 +3,16 @@
 </p>
 
 <p align="center">La plataforma de documentación para el Backend API de
-<a href="https://obelisco-back.web.app/">Obelisco</a>
+<a href="https://gcba.github.io/">Obelisco</a>
 </p>
 
 ## Descripción
 
-Es la plataforma de documentación para [Obelisco-back](https://obelisco-back.web.app/) API de Obelisco destinado a simplificar el trabajo de desarrolladores en proyectos y activos digitales del Gobierno de la Ciudad de Buenos Aires.
+Es la plataforma de documentación para [Obelisco-back](https://github.com/gcba/obelisco-back) API de Obelisco destinado a simplificar el trabajo de desarrolladores en proyectos y activos digitales del Gobierno de la Ciudad de Buenos Aires.
 
 Accedé fácilmente a los endpoints que proporcionan información actualizada sobre diversos aspectos de la vida en la ciudad.
 
-Utiliza la [documentación](https://obelisco-back.web.app/) y creá aplicaciones innovadoras con datos confiables y accesibles.
+Utiliza la [documentación](https://gcba.github.io/obelisco-api/) y creá aplicaciones innovadoras con datos confiables y accesibles.
 
 ## Instalación
 
