@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://obelisco-back.web.app/" target="blank"><img src="https://gcba.github.io/img/header/Obelisco-logo.svg" width="200" alt="Obelisco Logo" /></a>
+  <a href="https://gcba.github.io/" target="blank"><img src="https://gcba.github.io/img/header/Obelisco-logo.svg" width="200" alt="Obelisco Logo" /></a>
 </p>
 
 <p align="center">La plataforma de documentación para el Backend API de
