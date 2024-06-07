@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfront_api=self.webpackChunkfront_api||[]).push([[551],{1551:(e,u,l)=>{l.r(u),l.d(u,{FlutterModule:()=>a});var o=l(6895),r=l(3447),n=l(8274);let a=(()=>{class t{}return t.\u0275fac=function(d){return new(d||t)},t.\u0275mod=n.oAB({type:t}),t.\u0275inj=n.cJS({imports:[o.ez,r.Iq]}),t})()}}]);

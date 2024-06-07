@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfront_api=self.webpackChunkfront_api||[]).push([[224],{8224:(E,l,o)=>{o.r(l),o.d(l,{PhpModule:()=>M});var a=o(6895),t=o(3447),u=o(8274);let M=(()=>{class n{}return n.\u0275fac=function(d){return new(d||n)},n.\u0275mod=u.oAB({type:n}),n.\u0275inj=u.cJS({imports:[a.ez,t.Iq]}),n})()}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfront_api=self.webpackChunkfront_api||[]).push([[241],{6241:(m,o,n)=>{n.r(o),n.d(o,{ImagesModule:()=>s});var e=n(6895),u=n(8274);let s=(()=>{class a{}return a.\u0275fac=function(t){return new(t||a)},a.\u0275mod=u.oAB({type:a}),a.\u0275inj=u.cJS({imports:[e.ez]}),a})()}}]);
