@@ -35,39 +35,7 @@ export class DocsComponent implements AfterViewInit {
         { title: 'Redes Sociales', route: '/docs/footer/networks' },
         { title: 'Imágenes', route: '/docs/footer/images' },
       ],
-    },
-    {
-      title: 'Resolución',
-      route: '/docs/resolution',
-      icon: 'bx bxs-file-pdf',
-      children: [{ title: 'Resolución', route: '/docs/resolution' }],
-    },
-    {
-      title: 'Versiones',
-      route: '/docs/versions/all',
-      icon: 'bx bx-purchase-tag-alt',
-      children: [
-        { title: 'Todas', route: '/docs/versions/all' },
-        { title: 'Listado', route: '/docs/versions/list' },
-        { title: 'Número de versión', route: '/docs/versions/number' },
-      ],
-    },
-    {
-      title: 'Header',
-      route: '/docs/header/images',
-      icon: 'bx bx-dock-top',
-      children: [{ title: 'Images', route: '/docs/header/images' }],
-    },
-    {
-      title: 'Areas de gobierno',
-      route: '/docs/government-areas/areas-list',
-      icon: 'bx bxs-vector',
-      children: [
-        { title: 'Listado', route: '/docs/government-areas/areas-list' },
-        { title: 'Por ID', route: '/docs/government-areas/areas-by-id' },
-        { title: 'Todas', route: '/docs/government-areas/all' },
-      ],
-    },
+    }
   ];
 
   public howToList: NavVerticalItems[] = [

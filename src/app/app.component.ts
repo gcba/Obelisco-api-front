@@ -40,8 +40,6 @@ export class AppComponent {
     { title: 'Footer - Redes Sociales', route: '/docs/footer/networks' },
     { title: 'Footer - Imágenes', route: '/docs/footer/images' },
 
-    { title: 'Resolución', route: '/docs/resolution' },
-
     { title: 'Version - Todas', route: '/docs/versions/all' },
     { title: 'Version - Listado', route: '/docs/versions/list' },
     { title: 'Version - Número de versión', route: '/docs/versions/number' },
